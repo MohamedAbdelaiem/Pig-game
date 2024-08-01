@@ -1,159 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-body{
-    font-weight:400;
-    color:#333;
-    background-image: linear-gradient(to top left,#753682 0%, #bf2e34 100%);
-    display: flex;
-    height:100vh;
-    justify-content: center;
-    align-items: center;
+body {
+  font-weight: 400;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.main{
-    width: 90%;
-    background-color: #fff;
-    /* padding: 20px; */
-    height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(200px);
-    filter: blur();
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    /* overflow: hidden; */
+.main {
+  width: 90%;
+  background-color: #fff;
+  /* padding: 20px; */
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  /* overflow: hidden; */
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    /* margin: 20px; */
-    position: relative;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* margin: 20px; */
+  position: relative;
 }
-.first-player{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    border-right: 1px solid #ccc;
-    padding: 20px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-
-.player--active{
-    background-color: rgba(255, 255, 255, 0.4);
+.first-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
-
-.second-player{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
-    padding: 20px;
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-.first-player .player1{
-    font-size: 30px;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 50px;
+.second-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
-.player--active .player1{
-    font-weight: 700;
+.first-player .player1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 50px;
 }
 
-
-
-.second-player .player2{
-    font-size: 30px;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 50px;
+.player--active .player1 {
+  font-weight: 700;
 }
 
-.first-player .score1{
-    font-size: 50px;
-    font-weight: 300;
-    color: #c7365f;
-    margin-bottom: 10px;
-    top: 110px;
-    position: absolute;
+.second-player .player2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 50px;
 }
 
-.player--active .score1{
-    font-weight: 500;
-
+.first-player .score1 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: 10px;
+  top: 110px;
+  position: absolute;
 }
 
-.second-player .score2{
-    font-size: 50px;
-    font-weight: 300;
-    color: #c7365f;
-    margin-bottom: 10px;
-    top: 110px;
-    position: absolute;
+.player--active .score1 {
+  font-weight: 500;
 }
 
- .current-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 70px;
-    font-size: 30px;
-    font-weight: 600;
-    background-color: #c7365f;
-    opacity: 0.8;
-    border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
-    padding: 20px;
+.second-player .score2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: 10px;
+  top: 110px;
+  position: absolute;
 }
 
-.player--active .current-container{
-    opacity: 1;
+.current-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 70px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  padding: 20px;
 }
 
-.current-container .current2 , .current-container .current1{
-    font-size: 50px;
-    font-weight: 600;
-    color: #333;
+.player--active .current-container {
+  opacity: 1;
 }
 
+.current-container .current2,
+.current-container .current1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
+}
 
 /*buttons*/
 
-.new-Game , .roll-Dice, .hold {
-    position: absolute;
+.new-Game,
+.roll-Dice,
+.hold {
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   color: #444;
@@ -165,7 +169,7 @@ body{
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
-    text-align: center;
+  text-align: center;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
@@ -181,143 +185,146 @@ body{
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
 } */
 
-.new-Game{
-    top: 40px;
-    left: 50%;
+.new-Game {
+  top: 40px;
+  left: 50%;
 }
 
-.roll-Dice{
-    bottom:100px
+.roll-Dice {
+  bottom: 100px;
 }
 
-.hold{
-    bottom: 40px;
+.hold {
+  bottom: 40px;
 }
 
-.new-Game:hover , .roll-Dice:hover , .hold:hover{
-    background-color: #f3f3f3;
-    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2); 
+.new-Game:hover,
+.roll-Dice:hover,
+.hold:hover {
+  background-color: #f3f3f3;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
 }
 
 .dice {
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+  display: none;
+}
+
+.player--winner{
+  background-color: #2f2f2f;
+}
+
+.player--winner .player1,
+.player--winner .player2{
+  font-weight: 700;
+  color: #c7365f;
+}
+
+@media (max-width: 767px) {
+  .first-player .player1,
+  .second-player .player2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
     position: absolute;
-    left: 50%;
-    top: 10rem;
-    transform: translateX(-50%);
-    height: 10rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    top: 50px;
+    text-align: center;
+  }
+  .first-player {
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .container {
+    margin: 2px;
+  }
+  .second-player {
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .first-player .score1,
+  .second-player .score2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    top: 110px;
+    position: absolute;
+  }
+  .main {
+    width: 80%;
+    height: 60%;
+  }
+  .current-container {
+    bottom: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    padding: 10px;
+    width: 100px;
   }
 
+  .new-Game,
+  .hold,
+  .roll-Dice {
+    padding: 0rem 0.1rem;
+    font-size: 5px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+  }
 
+  .new-Game {
+    top: -30px;
+  }
 
-
-
-
-
-
-
-
-
-
-@media(max-width:767px)
-{
-    .first-player .player1 , .second-player .player2{
-        font-size: 20px;
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 10px;
-        position: absolute;
-        top: 50px;
-        text-align: center;
-    }
-    .first-player{
-        text-align: center;
-        align-items: center;
-        padding: 5px;
-
-    }
-    .container{
-        margin: 2px;
-    }
-    .second-player{
-        text-align: center;
-        align-items: center;
-        padding: 5px;
-    }
-    .first-player .score1 , .second-player .score2{
-        font-size: 20px;
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 10px;
-        top: 110px;
-        position: absolute;
-    }
-    .main{
-        width: 80%;
-        height: 60%;
-    }
-    .current-container{
-        bottom: 50px;
-        font-size: 20px;
-        font-weight: 600;
-        background-color: #c7365f;
-        opacity: 0.8;
-        border-radius: 9px;
-        -webkit-border-radius: 9px;
-        -moz-border-radius: 9px;
-        -ms-border-radius: 9px;
-        -o-border-radius: 9px;
-        padding: 10px;
-        width: 100px;
-    }
-
-    .new-Game, .hold , .roll-Dice{
-        padding: 0rem 0.1rem;
-        font-size: 5px;
-        width: 80px;
-        height: 80px;
-        font-size: 20px;
-        text-align:center;
-        text-transform:lowercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        z-index: 1;
-}
-
-.new-Game{
-    top:-30px
-}
-
-.roll-Dice{
+  .roll-Dice {
     top: 93%;
     left: 24%;
-}
+  }
 
-.hold
-{
+  .hold {
     top: 93%;
-        left: 75%;
-}
+    left: 75%;
+  }
 
-.dice {
+  .dice {
     position: absolute;
     left: 50%;
     top: 9rem;
     transform: translateX(-50%);
     height: 5rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-    width:5rem
+    width: 5rem;
+  }
 
-}
 
-    
-    /* .container{
+  /* .container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -326,12 +333,3 @@ body{
         position: relative;
     } */
 }
-
-
-
-
-
-
-
-
-
